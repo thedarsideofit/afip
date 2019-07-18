@@ -1,25 +1,25 @@
 {
-    "name": "gonzakpo/afip-bundle",
+    "name": "thedarsideofit/afip-bundle",
     "type": "symfony-bundle",
-    "description": "Web Services de AFIP",
+    "description": "Web Services de AFIP para symfony 2.x",
     "keywords": ["afip", "web", "services"],
-    "homepage": "https://github.com/gonzakpo/afip",
+    "homepage": "https://github.com/thedarsideofit/afip",
     "license": "MIT",
     "authors": [
         {
-            "name": "Gonzalo Alonso",
-            "email": "gonkpo@gmail.com"
+            "name": "Diego Ramirez",
+            "email": "dramirez@hydras.com.ar"
         }
     ],
     "require": {
-        "afipsdk/afip.php": "^0.5.3"
+        "thedarsideofit/afip.php": "^0.5.3"
     },
     "config": {
         "sort-packages": true
     },
     "autoload": {
         "psr-4": {
-            "Gonzakpo\\AfipBundle\\": "src/"
+            "Thedarsideofit\\AfipBundle\\": "src/"
         }
     },
     "extra": {

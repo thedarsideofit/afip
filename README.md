@@ -3,16 +3,9 @@ Web Services de AFIP
 Installation
 ============
 
-Applications that use Symfony Flex (Developing)
------------------------------------------------
-
-Open a command console, enter your project directory and execute:
-
-```console
-$ composer require gonzakpo/afip-bundle
 ```
 
-Applications that don't use Symfony Flex
+Applications that use Symfony 2.x
 ----------------------------------------
 
 ### Step 1: Download the Bundle
@@ -21,7 +14,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require gonzakpo/afip-bundle
+$ composer require thedarsideofit/afip-bundle
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -38,22 +31,22 @@ in the `config/bundles.php` file of your project:
 
 return [
     // ...
-    Gonzakpo\AfipBundle\AfipBundle::class => ['all' => true],
+    Thedarsideofit\AfipBundle\AfipBundle::class => ['all' => true],
 ];
 
 ```
 
 ### Step 3: Add file config
 
-In the `config/packages/afip_parameters.yaml` file of your project:
+In the `app/config/config.yml` file of your project:
 
 ```yaml
 afip:
     parameters:
         CUIT: 20111111112
         production: false
-        res_folder: 'src/afip_res/'
-        ta_folder: 'src/afip_res/'
+        res_folder: 'Resources/afip/'
+        ta_folder: 'Resources/afip/'
         cert: 'cert'
         key: 'key'
         passphrase: ''
@@ -105,7 +98,9 @@ use Gonzakpo\AfipBundle\Controller\AfipController;
 ```
 
 ## Dependencias
-- El bundle implementa [afipsdk-afip.php](https://github.com/afipsdk/afip.php) .
+- El bundle implementa a thedarsideofit fork for [afipsdk-afip.php](https://github.com/thedarsideofit/afip.php) .
 
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
+
+## Adapter for Symfony 2 - Diego Ramirez dramirez@hydras.com.ar 
