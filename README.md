@@ -32,7 +32,7 @@ in the `app/AppKernel.php` file of your project:
  public function registerBundles()
     {
         $bundles = array(
-            new Gonzakpo\AfipBundle\AfipBundle(),
+            new Thedarsideofit\AfipBundle\AfipBundle(),
         );
 
 ```
