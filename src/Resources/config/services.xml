@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="afipservice" class="Gonzakpo\AfipBundle\Controller\AfipController" public="true">
+        <service id="afipservice" class="Thedarsideofit\AfipBundle\Controller\AfipController" public="true">
             <argument>%afip_parameters%</argument>
             <argument>%kernel.root_dir%</argument>
         </service>

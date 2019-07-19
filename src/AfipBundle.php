@@ -1,12 +1,12 @@
 <?php
 
-namespace Gonzakpo\AfipBundle;
+namespace Thedarsideofit\AfipBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * @author Gonzalo Alonso <gonkpo@gmail.com>
+ * @author Diego Ramirez <dramirez@hydras.com.ar>
  */
 class AfipBundle extends Bundle
 {

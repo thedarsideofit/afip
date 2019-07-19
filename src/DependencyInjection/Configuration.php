@@ -1,6 +1,6 @@
 <?php
 
-namespace Gonzakpo\AfipBundle\DependencyInjection;
+namespace Thedarsideofit\AfipBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
