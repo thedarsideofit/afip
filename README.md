@@ -24,15 +24,16 @@ of the Composer documentation.
 ### Step 2: Enable the Bundle
 
 Then, enable the bundle by adding it to the list of registered bundles
-in the `config/bundles.php` file of your project:
+in the `app/AppKernel.php` file of your project:
 
 ```php
 <?php
 
-return [
-    // ...
-    Thedarsideofit\AfipBundle\AfipBundle::class => ['all' => true],
-];
+ public function registerBundles()
+    {
+        $bundles = array(
+            new Gonzakpo\AfipBundle\AfipBundle(),
+        );
 
 ```
 
