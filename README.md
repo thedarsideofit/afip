@@ -64,37 +64,21 @@ Add files cert and key
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-use Gonzakpo\AfipBundle\Controller\AfipController;
 
-class AppController extends AbstractController
+class DefaultController extends Controller {
 {
     /**
      * @Route("/app", name="app")
      */
-    public function index(AfipController $afip)
+    public function index()
     {
-        dump($afip->getWS());
-
-        return $this->render('app/index.html.twig', [
-            'controller_name' => 'AppController',
-        ]);
+        die($this->get('afipservice')->getWS()->RegisterScopeTen->GetServerStatus());
     }
 }
 
-```
-### Other Example use Afip dependency injection
-```php
-...
-use Gonzakpo\AfipBundle\Controller\AfipController;
-...
-    public function index()
-    {
-        $afip = $this->container->get(AfipController::class);
-    }
-...
 ```
 
 ## Dependencias
@@ -103,4 +87,5 @@ use Gonzakpo\AfipBundle\Controller\AfipController;
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
 
-## Adapter for Symfony 2 - Diego Ramirez dramirez@hydras.com.ar 
+## Adapter for Symfony 2 
+Diego Ramirez dramirez@hydras.com.ar 
