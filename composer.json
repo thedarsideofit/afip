@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Thedarsideofit\\AfipBundle\\": "src/"
+            "Gonzakpo\\AfipBundle\\": "src/"
         }
     },
     "extra": {
